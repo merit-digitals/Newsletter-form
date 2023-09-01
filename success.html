@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Success page</title>
+  </head>
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+  />
+
+  <link rel="stylesheet" href="success.css" />
+  <body>
+    <div class="container">
+      <i class="fa-solid fa-circle-check"></i>
+
+      <h3>
+        Thanks for <br />
+        subscribing!
+      </h3>
+
+      <p>
+        A confirmation email has been sent to <br />ash@loremcompany.com. Please
+        open it and click <br />the button inside to confirm your subscription.
+      </p>
+
+      <button id="btn" onclick=" clickinner(this)">Dismiss message</button>
+    </div>
+
+    <script>
+      function clickinner(target) {
+        // Target refers to the clicked element
+        location.href = "index.html";
+      }
+    </script>
+  </body>
+</html>

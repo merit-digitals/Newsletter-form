@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="leftCon">
+        <h1>Stay updated!</h1>
+
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+
+        <div class="mark-con">
+          <div class="mark-conn">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>Product discovery and building what matters</span> <br />
+          </div>
+
+          <div class="mark-conn">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>Measuring to ensure updates are a success</span> <br />
+          </div>
+
+          <div class="mark-conn">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>And much more! </span>
+          </div>
+        </div>
+
+        <div class="mail-input">
+          <h4>Email address</h4>
+          <input type="text" placeholder="email@company.com  " required />
+        </div>
+
+        <div class="btn" onClick=" clickinner(this)">
+          <button id="btn">Subscribe to monthly newsletter</button>
+        </div>
+      </div>
+
+      <div class="rightCon">
+        <img src="./assets/images/illustration-sign-up-desktop.svg" alt="" />
+      </div>
+    </div>
+
+    <script>
+      function clickinner(target) {
+        // Target refers to the clicked element
+        location.href = "success.html";
+      }
+    </script>
+  </body>
+</html>
